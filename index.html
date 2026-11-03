@@ -23,6 +23,7 @@
                     <li><a href="#education">Education</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#responsibilities">Responsibilities</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#achievements">Achievements</a></li>
                     <li><a href="#cv">CV</a></li>
@@ -74,7 +75,7 @@
                 </div>
                 <div class="about-stats">
                     <div class="stat-card"><div class="stat-num">2</div><div class="stat-label">Internships</div></div>
-                    <div class="stat-card"><div class="stat-num">11</div><div class="stat-label">Projects</div></div>
+                    <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">Featured Projects</div></div>
                     <div class="stat-card"><div class="stat-num">99.66</div><div class="stat-label">GATE Percentile</div></div>
                 </div>
             </div>
@@ -86,6 +87,7 @@
             <h2 class="section-title">Education</h2>
             <div class="edu-grid">
                 <div class="edu-card" data-edu="iisc">
+                    <div class="edu-logo-placeholder">IISc</div>
                     <div class="edu-front">
                         <h3>Indian Institute of Science</h3>
                         <p class="edu-degree">M.Tech - Computational and Data Science</p>
@@ -102,6 +104,7 @@
                     </div>
                 </div>
                 <div class="edu-card" data-edu="gbpuat">
+                    <div class="edu-logo-placeholder">GBPUAT</div>
                     <div class="edu-front">
                         <h3>GB Pant University of Agriculture and Technology</h3>
                         <p class="edu-degree">B.Tech - Computer Engineering</p>
@@ -118,6 +121,7 @@
                     </div>
                 </div>
                 <div class="edu-card" data-edu="school12">
+                    <div class="edu-logo-placeholder">CSSS</div>
                     <div class="edu-front">
                         <h3>Cynthia Senior Secondary School</h3>
                         <p class="edu-degree">Intermediate (12th Grade)</p>
@@ -130,6 +134,7 @@
                     </div>
                 </div>
                 <div class="edu-card" data-edu="school10">
+                    <div class="edu-logo-placeholder">CSSS</div>
                     <div class="edu-front">
                         <h3>Cynthia Senior Secondary School</h3>
                         <p class="edu-degree">High School (10th Grade)</p>
@@ -182,6 +187,7 @@
             <h2 class="section-title">Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
+                    <div class="company-logo-placeholder">Honeywell</div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>AI Intern</h3>
@@ -195,6 +201,7 @@
                     </div>
                 </div>
                 <div class="timeline-item">
+                    <div class="company-logo-placeholder">NICSI</div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Machine Learning Intern</h3>
@@ -205,6 +212,26 @@
                             <li>Focused on population density management for safety and resource optimization.</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="responsibilities" class="section">
+        <div class="container">
+            <h2 class="section-title">Positions of <span class="accent">Responsibility</span></h2>
+            <div class="responsibility-grid">
+                <div class="resp-card">
+                    <h3>Student Representative</h3>
+                    <p class="resp-org">Gymkhana Students Affairs Committee · IISc Bengaluru</p>
+                    <p class="resp-period">2026 · Bengaluru, Karnataka</p>
+                    <p>Representing student concerns and coordinating affairs between the student body and institute administration.</p>
+                </div>
+                <div class="resp-card">
+                    <h3>Technical Head</h3>
+                    <p class="resp-org">Interface: Branch Chapter of CSE</p>
+                    <p class="resp-period">2022 – 2025 · Pantnagar, Uttarakhand</p>
+                    <p>Organized technical events including PC gaming, coding competitions, and chess for the Computer Engineering Department.</p>
                 </div>
             </div>
         </div>
@@ -236,35 +263,15 @@
                 </div>
                 <div class="project-card" data-proj="3">
                     <div class="proj-front">
-                        <h3>Blood Group Detection using Fingerprints</h3>
-                        <div class="proj-tech">TensorFlow · OpenCV · CNN</div>
+                        <h3>Offline Multi-Agent System via Fine-Tuned SLM</h3>
+                        <div class="proj-tech">LangGraph · MCP · vLLM · PEFT (LoRA) · Hugging Face</div>
                     </div>
                     <div class="proj-back">
-                        <h3>Blood Group Detection</h3>
-                        <p>CNN to predict human blood groups from fingerprint images using OpenCV preprocessing. Explored non-invasive biometric identification.</p>
+                        <h3>Offline Multi-Agent System</h3>
+                        <p>Fine-tuned a 1.5B parameter SLM using LoRA to serve as a reliable, fully offline tool-caller (100% schema validity, 93% correct tool selection). Architected an on-device multi-agent framework with dynamic hot-swapping of LoRA adapters via vLLM.</p>
                     </div>
                 </div>
                 <div class="project-card" data-proj="4">
-                    <div class="proj-front">
-                        <h3>Content-Based Movie Recommendation System</h3>
-                        <div class="proj-tech">Python · NLP · Scikit-learn · TMDB</div>
-                    </div>
-                    <div class="proj-back">
-                        <h3>Movie Recommender</h3>
-                        <p>Content-based recommender using TMDB dataset (5,000+ movies). Leveraged CountVectorizer, cosine similarity, Porter Stemmer, and TF-IDF for semantically relevant recommendations.</p>
-                    </div>
-                </div>
-                <div class="project-card" data-proj="5">
-                    <div class="proj-front">
-                        <h3>Credit Card Fraud Detection</h3>
-                        <div class="proj-tech">Python · Scikit-learn · Random Forest · SMOTE</div>
-                    </div>
-                    <div class="proj-back">
-                        <h3>Fraud Detection</h3>
-                        <p>Compared Logistic Regression, Decision Tree, and Random Forest on highly imbalanced data (0.17% fraud rate). Implemented SMOTE and StandardScaler; evaluated using Accuracy, Precision, Recall, F1-score, and ROC-AUC.</p>
-                    </div>
-                </div>
-                <div class="project-card" data-proj="6">
                     <div class="proj-front">
                         <h3>TinyML Head Gesture Recognition</h3>
                         <div class="proj-tech">Arduino · TensorFlow Lite · STM32 · UDP</div>
@@ -362,7 +369,7 @@
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">🐙</span>
+                        <span class="contact-icon">📂</span>
                         <div>
                             <strong>GitHub</strong>
                             <a href="https://github.com/MaitreyiTiwari/MaitreyiTiwari" target="_blank">github.com/MaitreyiTiwari/MaitreyiTiwari</a>
